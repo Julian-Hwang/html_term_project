@@ -1,0 +1,132 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+		body {
+			background-color:#c5b9cd;
+			color: whitesmoke;
+			font-size: 20px;
+		}
+		a:link{
+			color:red;
+			text-decoration-line: none;
+		}
+		a:visited{
+			color: blue;
+			text-decoration-line: none;
+		}
+		div{
+			background-color:#92A8D1;
+			margin: 50px;
+		}
+		h2 {
+			text-align:center;
+		}
+		img{
+			width:40px;
+			height:40px;
+			vspace:5px;
+			hspace:5px;
+		}
+		.table1{
+			table-layout: fixed;
+			
+		}
+		TABLE{width: 500; height: 300;}
+		TD{text-align:center}
+		.td{background-color:skyblue;}
+	</style>
+	<script language="javascript">
+		function elementary(){
+			window.open("https://daeeun.sen.es.kr/", "_blank","fullscreen");
+		}
+		function middle(){
+			window.open("https://dsms.sen.ms.kr/", "_blank","fullscreen");
+		}
+		function high(){
+			window.open("https://dae-sung.sen.hs.kr/", "_blank","fullscreen");
+		}
+		function unv(){
+			window.open("https://cs.kku.ac.kr/", "_blank","fullscreen");
+		}
+	</script>
+	<title>자기 소개</title>
+</head>
+
+<body>
+	<p><h2>자기 소개</h2></p>
+	<h3 align="right">
+		<input type="radio" name="color" onclick="change('black')">나이트모드&nbsp
+		<input type="radio" name="color" onclick="change('#c5b9cd')">돌아가기&nbsp
+		<input type="button" value="Zoom In" onClick="javascript:zoomin()">
+		<input type="button" value="Zoom Out" onClick="javascript:zoomout()">
+		<input type="button" value="Reset" onClick="javascript:zoomreset()">
+	</h3>
+	
+	<p><hr></p>
+	<div>
+	<table align="center">
+		<tr>
+			<td class="td">이름</td>
+			<td class="td">황석진</td>
+		</tr>
+		<tr>
+			<td class="td">활동명</td>
+			<td class="td">Luna</td>
+		</tr>
+		<tr>
+			<td class="td">생년월일</td>
+			<td class="td">1999년 4월 14일</td>
+		</tr>
+		<tr>
+			<td class="td">나이</td>
+			<td class="td">24</td>
+		</tr>
+		<tr>
+			<td class="td">취미</td>
+			<td class="td">노래듣기</td>
+		</tr>
+		<tr>
+			<td class="td">특기</td>
+			<td class="td">문서정리</td>
+		</tr>
+	</table>
+	
+	
+	</div>
+	
+	<div>
+	<table align="center">
+		<tr>
+			<td colspan="3" class="td">학력사항</td>
+		</tr>
+		<tr>
+			<td class="td">서울대은초등학교</td>
+			<td class="td">2012년 졸업</td>
+			<td class="td"><a href="" onClick="elementary()"><img src="home.jpg"></td>
+		</tr>
+		<tr>
+			<td class="td">서울대성중학교</td>
+			<td class="td">2015년 졸업</td>
+			<td class="td"><a href="" onClick="middle()"><img src="home.jpg"></td>
+		</tr>
+		<tr>
+			<td class="td">서울대성고등학교</td>
+			<td class="td">2018년 졸업</td>
+			<td class="td"><a href="" onClick="high()"><img src="home.jpg"></td>
+		</tr>
+		<tr>
+			<td class="td">건국대학교 글로컬캠퍼스 컴퓨터공학과</td>
+			<td class="td">2018년 입학</td>
+			<td class="td"><a href="" onClick="unv()"><img src="home.jpg"></td>
+		</tr>
+	</table>
+	
+	</div>
+	
+	<p><hr></p>
+	<p><a href="Right.html"><font color="red">돌아가기</font></p>
+	<script src="zoom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+		body{
+			background-color: #c5b9cd;
+			color: whitesmoke;
+			font-size: 20px;
+		}
+		a:link{
+			color:red;
+			text-decoration-line: none;
+		}
+		a:visited{
+			color: blue;
+			text-decoration-line: none;
+		}
+		div{
+			background-color:#92A8D1;
+			margin: 50px;
+		}
+	</style>
+	<script language="javascript">
+		function site(){
+			window.open("http://www.docker.com/products/docker-desktop", "_blank","fullscreen");
+		}
+	</script>
+	<title>도커는 무엇인가?</title>
+</head>
+
+<body>
+	<p><h2 align="center">도커 설치하기</h2></p>
+	<h3 align="right">
+		<input type="radio" name="color" onclick="change('black')">나이트모드&nbsp
+		<input type="radio" name="color" onclick="change('#c5b9cd')">돌아가기&nbsp
+		<input type="button" value="Zoom In" onClick="javascript:zoomin()">
+		<input type="button" value="Zoom Out" onClick="javascript:zoomout()">
+		<input type="button" value="Reset" onClick="javascript:zoomreset()">
+	</h3>
+	
+	<p><hr></p>
+	
+	<div>
+	<p>1. PowerShell에서 관리자 권한으로 다음 명령어를 실행합니다.</p>
+	<p align="center"><img src="1.jpg" width="700" height="400" onmouseenter="mouse_zoomin(event)" onmouseleave="mouse_zoomout(event)"/></p>
+		<ul>
+			<li>$ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+			<li>$ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+		</ul>
+	</div>
+	<p><hr></p>
+
+	<div>
+	<p>2. 재부팅한다.</p>
+	<p align="center"><img src="2.jpg" width="200" height="100" onmouseenter="mouse_zoomin(event)" onmouseleave="mouse_zoomout(event)"/></p>
+	</div>
+	<p><hr></p>
+	
+	<div>
+	<p>3. 해당 url로 파일을 다운로드 한다.</p>
+		<ul>
+			<li><a href="http://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi ">http://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi</a> 
+		</ul>
+	</div>
+	<p><hr></p>
+
+	<div>
+	<p>4. PowerShell에서 관리자 권한으로 wsl --set-default-version2를 입력한다.</p>
+	<p align="center"><img src="3.jpg" width="800" height="300" onmouseenter="mouse_zoomin(event)" onmouseleave="mouse_zoomout(event)"/></p>
+	<p><hr></p>
+	</div>
+
+	<div>
+	<p>5. 제어판에서 프로그램->Windows 기능 켜기/끄기->Hyper-V->Hyper-V 관리도구, Hyper-V 플랫폼을 체크한다.</p>
+	<p align="center"><img src="4.jpg" width="500" height="400" onmouseenter="mouse_zoomin(event)" onmouseleave="mouse_zoomout(event)"/></p>
+	</div>
+	<p><hr></p>
+
+	<div>
+	<p>6. Docker 사이트에 들어가 [Download for Windows]를 클릭라여 다운 받아 실행한다.</p>
+	<p align="center"><img src="5.jpg" width="700" height="300" onmouseenter="mouse_zoomin(event)" onmouseleave="mouse_zoomout(event)"/></p>
+		<ul>
+			<li><a href="" onClick="site()">http://www.docker.com/products/docker-desktop</a>
+		</ul>
+	</div>
+	<p><hr></p>
+
+	<div>
+	<p>7. 설치가 완료되면 Upgrade 옆에 있는 톱니바퀴(설정)를 클릭한다.</p>
+	<p align="center"><img src="6.jpg" width="700" height="400" onmouseenter="mouse_zoomin(event)" onmouseleave="mouse_zoomout(event)"/></p>
+	</div>
+	<p><hr></p>
+
+	<div>
+	<p>8. 톱니바퀴(설정)을 클릭하고 General에서 Expose daemon on tcp://localhost:2375 without TLS를 클릭한다.</p>
+	<p align="center"><img src="7.jpg" width="700" height="400" onmouseenter="mouse_zoomin(event)" onmouseleave="mouse_zoomout(event)"/></p>
+	</div>
+	<p><hr></p>
+
+	<div>
+	<p>9. PowerShell 관리자 모드에서 docker version, docker info를 입력해서 설치가 다 되었는지 확인한다.</p>
+	<p align="center"><img src="8.jpg" width="600" height="400" onmouseenter="mouse_zoomin(event)" onmouseleave="mouse_zoomout(event)"/></p>
+	</div>
+	<p><hr></p>
+
+	<p><a href="Right.html"><font color="red">돌아가기</font></p>
+	<script src="zoom.js"></script>
+</body>
+
+</html>

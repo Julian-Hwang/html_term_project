@@ -1,0 +1,56 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+		body {
+			background-color: #c5b9cd;
+			color: whitesmoke;
+			font-size: 20px;
+		}
+		a:link{
+			color:red;
+			text-decoration-line: none;
+		}
+		a:visited{
+			color: blue;
+			text-decoration-line: none;
+		}
+		div{
+			background-color:#92A8D1;
+			margin: 50px;
+		}
+		img{
+			width: 200px;
+			height: 200px;
+		}
+	</style>
+	
+	<title>게임하기</title>
+</head>
+
+<body>
+	<p><h2 align="center">게임하기</h2></p>
+	<h3 align="right">
+		<input type="radio" name="color" onclick="change('black')">나이트모드&nbsp
+		<input type="radio" name="color" onclick="change('#c5b9cd')">돌아가기&nbsp
+		<input type="button" value="Zoom In" onClick="javascript:zoomin()">
+		<input type="button" value="Zoom Out" onClick="javascript:zoomout()">
+		<input type="button" value="Reset" onClick="javascript:zoomreset()">
+	</h3>
+	<script src="zoom.js"></script>
+	<p><hr></p>
+	<P align="center">게임설명: 여러분들은 컴퓨터와 가위바위보를 하는 것입니다. 원하는 모양을 클릭하시면 됩니다.</P>
+
+	<p align="center">
+		<button type="button" onclick="play(1)"><img src="scissors.jpg"></button>
+		&nbsp
+		<button type="button" onclick="play(2)"><img src="rock.jpg"></button>
+		&nbsp
+		<button type="button" onclick="play(3)"><img src="pap.jpg"></button>
+	</p>
+	<script src = "game.js"></script>
+	<p><hr></p>
+	<p><a href="Right.html"><font color="red">돌아가기</font></p>
+</body>
+
+</html>
