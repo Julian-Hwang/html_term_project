@@ -1,0 +1,57 @@
+<html>
+<head>
+	<title>도커는 무엇인가?</title>
+</head>
+
+<body bgcolor="#74d1ea" text="#FF3300" leftmargin="50" topmargin="50" link="blue" vlink="#b464eb">
+	<p><h2 align="center">도커 설치하기</h2></p>
+	<p><hr></p>
+	<p><font size="4" color="blue">1. PowerShell에서 관리자 권한으로 다음 명령어를 실행합니다.</font></p>
+	<p align="center"><img src="1.jpg" width="700" height="400" ></p>
+		<ul>
+			<li>$ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+			<li>$ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+		</ul>
+	<p><hr></p>
+
+	<p><font size="4" color="blue">2. 재부팅한다.</font></p>
+	<p align="center"><img src="2.jpg" width="200" height="100" ></p>
+	<p><hr></p>
+
+	<p><font size="4" color="blue">3. 해당 url로 파일을 다운로드 한다.</font></p>
+		<ul>
+			<li><a href="http://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi ">http://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi</a> 
+		</ul>
+	<p><hr></p>
+
+	<p><font size="4" color="blue">4. PowerShell에서 관리자 권한으로 wsl --set-default-version2를 입력한다.</font></p>
+	<p align="center"><img src="3.jpg" width="800" height="300" ></p>
+	<p><hr></p>
+
+	<p><font size="4" color="blue">5. 제어판에서 프로그램->Windows 기능 켜기/끄기->Hyper-V->Hyper-V 관리도구, Hyper-V 플랫폼을 체크한다.</font></p>
+	<p align="center"><img src="4.jpg" width="500" height="400" ></p>
+	<p><hr></p>
+
+	<p><font size="4" color="blue">6. Docker 사이트에 들어가 [Download for Windows]를 클릭라여 다운 받아 실행한다.</font></p>
+	<p align="center"><img src="5.jpg" width="700" height="300" ></p>
+		<ul>
+			<li><a href="http://www.docker.com/products/docker-desktop">http://www.docker.com/products/docker-desktop</a>
+		</ul>
+	<p><hr></p>
+
+	<p><font size="4" color="blue">7. 설치가 완료되면 Upgrade 옆에 있는 톱니바퀴(설정)를 클릭한다.</font></p>
+	<p align="center"><img src="6.jpg" width="700" height="400" ></p>
+	<p><hr></p>
+
+	<p><font size="4" color="blue">8. 톱니바퀴(설정)을 클릭하고 General에서 Expose daemon on tcp://localhost:2375 without TLS를 클릭한다.</font></p>
+	<p align="center"><img src="7.jpg" width="700" height="400" ></p>
+	<p><hr></p>
+
+	<p><font size="4" color="blue">9. PowerShell 관리자 모드에서 docker version, docker info를 입력해서 설치가 다 되었는지 확인한다.</font></p>
+	<p align="center"><img src="8.jpg" width="600" height="400" ></p>
+	<p><hr></p>
+
+	<p><a href="Right.html"><font color="purple">돌아가기</font></p>
+</body>
+
+</html>
