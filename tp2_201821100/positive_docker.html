@@ -1,0 +1,101 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+		body {
+			background-color: #c5b9cd;
+			color: whitesmoke;
+			font-size: 20px;
+		}
+		a:link{
+			color:red;
+		}
+		a:visited{
+			color: blue;
+		}
+		div{
+			background-color:#92A8D1;
+			margin: 50px;
+		}
+		.table1{
+			table-layout: fixed;
+			
+		}
+		TABLE{width: 500; height: 300;}
+		TD{text-align:center}
+		.td{background-color:skyblue;}
+	</style>	
+	<title>도커의 장점</title>
+</head>
+
+<body>
+	<p><h2>도커의 장점</h2></p>
+	<div>
+	<p><font>1. 하이퍼바이저 이용</font></p>
+	<table align="center">
+		<tr>
+			<td class="td">애플리케이션1</td>
+			<td class="td">애플리케이션2</td>
+		</tr>
+		<tr>
+			<td class="td">실행파일/Lib 파일</td>
+			<td class="td">실행파일/Lib 파일</td>
+		</tr>
+		<tr>
+			<td class="td">게스트 운영체계</td>
+			<td class="td">게스트 운영체계</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="td">하이퍼바이저</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="td">호스트 운영체계</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="td">세계</td>
+		</tr>
+	</table>
+	<ul>
+		<li>위에 있는 표는 하이퍼바이저는 가상 머신으로 VMware, VirtualBox가 예시로 있습니다.
+		<li>호스트 운영체계는 OS로 윈도우 10, 윈도우 11이 예시로 있습니다.
+		<li>하이퍼바이저 가상화 머신은 호스트 운영체제 윗단에 하이퍼바이저 가상화 엔진을 설치합니다. 이 하이퍼바이저(가상머신)는 여러 게스트 운영체제를 설치할 수 있는 기능을 제공합니다.
+		<li>하이퍼 바이저 상단에 설치된 각각의 게스트 운영체제 위에 실행파일과 라이브러리 파일들과 함께 베포하기 위해서 애플리케이션을 설치합니다.
+		<li>호스트 운영체제 상단에 또 다른 게스트 운영체제를 설치하여 자원을 공유하는 방식입니다.
+		<li>장점: 하나의 호스트 운영체제 위에서 여러 개의 게스트 운영체제를 사용할 수 있습니다.
+		<li>단점: 하나의 호스트 운영체제 위에 여러 개의 운영체제가 생성되어 시스템 전체 운영에 부하가 많이 걸립니다.
+	</ul>
+	</div>
+	
+	<div>
+	<p><font>2. 도커를 이용</font><br></p>
+	<table align="center">
+		<tr>
+			<td class="td">애플리케이션1</td>
+			<td class="td">애플리케이션2</td>
+		</tr>
+		<tr>
+			<td class="td">실행파일/Lib 파일</td>
+			<td class="td">실행파일/Lib 파일</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="td">도커 엔진</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="td">호스트 운영체계</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="td">서버</td>
+		</tr>
+	</table>
+	<ul>
+		<li>도커를 설치하면 상단의 별도의 게스트 운영체제를 설치할 필요가 없이 바로 필요한 실행파일과 라이브러리와 애플리케이션을 설치할 수 있습니다.
+		<li>도커 엔진이 호스트 운영체계의 자원을 공유하여 각각의 애플리케이션에 필요한 기능을 직접 제공합니다.
+		<li>도커 엔진 상단에 설치된 각각의 실행 파일과 애플리케이션은 서로 격리된 가상공간입니다. 하지만 별도의 게스트 운영체제가 없어 가상화란 정의 대신 컨테이너라 불립니다.
+		<li>장점: 별도의 게스트 운영체제를 사용하지 않고 Docker 엔진이 호스트 운영체제에서 필요한 리소스를 각각의 애플리케이션과 공유할 수 있게 작동합니다.(파일을 빠르게 접속하고 용량을 줄일 수 있다.)
+		<li>단점: 하이퍼바이저처럼 다양한 운영체제를 설치할 수 없습니다.
+	</ul>
+	</div>
+	<p><a href="Right.html"><font color="red">돌아가기</font></p>
+</body>
+
+</html>
